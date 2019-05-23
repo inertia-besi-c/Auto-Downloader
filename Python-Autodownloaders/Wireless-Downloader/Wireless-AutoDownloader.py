@@ -242,8 +242,7 @@ while True:     # Creates an always running loop
 
     if runs[0] != runs[1]:      # If the previous run and the current run do not have the same connected device count
         runautodownloader()     # Runs the autodownloader function
-        previousrun = currentrun        # Sets the previous run value to the currentrun value
-        downloadtime = current_time     # Sets a last download time for the system
+        previousrun, downloadtime = currentrun, current_time        # Sets the previous run value to the currentrun value, Sets a last download time for the system
 
     print("Last File Download Occurred on", downloadtime)       # Prints to console
     print("Last Devices Check Occurred on", current_time)       # Prints to console
