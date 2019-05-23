@@ -7,6 +7,13 @@ based on your specification on your system. This code as of right now, also igno
 from the system to the host device. The code will need some modification to work appropriately on your device. Please read the comments carefully and alter them as needed to your
 specifications. The code comes as is and I am not liable for any damages incurred form usage. The Adb to Python script used is thanks to Swind Ou who allowed free usage and alteration
 of the code.
+
+
+INSTRUCTION: If the error "TERM Variable is not set" happens, you will need to go find "Edit Configuration" in settings, and allow "Emulate Terminal Output" then rerun the file.
+***
+Usually you can find the "Edit Configuration" setting by clicking on the file name towards the right corner of the screen, and then click on the "Edit Configuration" option, and enable
+the terminal output emulation
+***
 """
 # ------------------------------------------------------------------INITIALIZATIONS------------------------------------------------------------------- #
 
