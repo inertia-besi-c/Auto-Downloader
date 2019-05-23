@@ -37,13 +37,14 @@ Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the fo
 
 Watch_Main_Directory_Path = "/sdcard/"+Watch_Main_Directory     # Absolute path to watch folder directory
 Base_Station_Directory_Path = "/Users/emmanuelogunjirin/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
-patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"
-caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"
+patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"        # This is the patient subdirectory
+caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"        # This is the caregiver subdirectory
 
 watch_count = 2     # Number of watch given to each individual
 origin = None       # Initializes the origin variable
 destination = None      # Initializes the destination variable
-previousrun = None
+downloadtime = None     # Initializes the download time variable
+previousrun = None      # Initializes the previous run variable
 
 """
 Information about the watches go here. It appears in the format below. Make sure all information is exactly the same as those in Android Studios. 
@@ -96,12 +97,9 @@ def connecttodevices():
     This checks and connects to the devices in the deployment. It keeps a constant adb bridge to the device and reconnects if the bridge is cut.
     :return: Returns the number of devices currently connected and accessible to the system.
     """
-    print("Checking Devices Connection Status...")      # Prints to the console.
-    print()     # Prints to the console
     devices_count = 0       # Number of devices currently connected
     adbdevices = str(os.popen('adb devices').read())        # Calls the terminal to initiate the adb devices command and saves the output to a variable
     adbdevices_split = adbdevices.split()       # Splits the results of the output by spaces.
-    print(adbdevices)       # Prints to the console
 
     for item in adbdevices_split:   # For every item in the split result
         if item == "device":        # Checks if the item has the string "device"
@@ -126,8 +124,8 @@ def datetimelog(endfile, mode):
     :return: Does not return anything.
     """
     with open(endfile, str(mode)) as file:      # Opens the specified file
-        current_time = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")        # Gets the current data and time from the system
-        file.write("Last download run happened on " + str(current_time))        # Writes the line to the given device destination
+        current_time_download = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")        # Gets the current data and time from the system
+        file.write("Last download run happened on " + str(current_time_download))        # Writes the line to the given device destination
         file.write("\n")        # Prints a new line
 
 
@@ -210,7 +208,7 @@ def runautodownloader():
     global patient_subdirectory     # Global variable
     global caregiver_subdirectory       # Global variable
 
-    current_time = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")      # Sets the current time variable
+    current_timer = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")      # Sets the current time variable
 
     try:        # Tries to do the following
         connecttodevices()      # Calls the connect function
@@ -234,15 +232,20 @@ def runautodownloader():
         sys.exit("Pull Data Failed")        # The system exits the process with a error message on the console
 
     print()     # Prints the console
-    print("Last Download on", current_time)     # Prints to the console
+    print("Last Download on", current_timer)     # Prints to the console
 
 
 while True:     # Creates an always running loop
+    current_time = datetime.datetime.now().strftime("%A, %B %d %Y at %I:%M%p")      # Sets the current time variable
     currentrun = connecttodevices()     # Sets the return of the connect function to the variable
     runs = [previousrun, currentrun]        # Keeps a running list of the number of devices from the last run, and the current run.
 
     if runs[0] != runs[1]:      # If the previous run and the current run do not have the same connected device count
         runautodownloader()     # Runs the autodownloader function
         previousrun = currentrun        # Sets the previous run value to the currentrun value
+        downloadtime = current_time     # Sets a last download time for the system
+
+    print("Last File Download Occurred on", downloadtime)       # Prints to console
+    print("Last Devices Check Occurred on", current_time)       # Prints to console
 
     time.sleep(1)       # The system sleeps for the specified time
