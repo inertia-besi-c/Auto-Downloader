@@ -27,6 +27,15 @@ os.system('adb start-server')       # Automatically starts the adb server if it 
 
 client = AdbClient(host="127.0.0.1", port=5037)     # Opens the adb gateway. Default is "127.0.0.1" and 5037
 devices = client.devices()  # This calls adb devices to see all the devices connected
+watch_count = 2     # Number of watch given to each individual
+origin = None       # Initializes the origin variable
+destination = None      # Initializes the destination variable
+downloadtime = None     # Initializes the download time variable
+previousrun = None      # Initializes the previous run variable
+patient_1_time = "Never"       # Initializes the patient-1 variable
+patient_2_time = "Never"       # Initializes the patient-2 variable
+caregiver_1_time = "Never"     # Initializes the caregiver-1 variable
+caregiver_2_time = "Never"     # Initializes the caregiver-2 variable
 
 # ----------------------------------------------------------------------SET-UP----------------------------------------------------------------------- #
 
@@ -39,16 +48,6 @@ Watch_Main_Directory_Path = "/sdcard/"+Watch_Main_Directory     # Absolute path 
 Base_Station_Directory_Path = "/Users/emmanuelogunjirin/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
 patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"        # This is the patient subdirectory
 caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"        # This is the caregiver subdirectory
-
-watch_count = 2     # Number of watch given to each individual
-origin = None       # Initializes the origin variable
-destination = None      # Initializes the destination variable
-downloadtime = None     # Initializes the download time variable
-previousrun = None      # Initializes the previous run variable
-patient_1_time = "Never"       # Initializes the patient-1 variable
-patient_2_time = "Never"       # Initializes the patient-2 variable
-caregiver_1_time = "Never"     # Initializes the caregiver-1 variable
-caregiver_2_time = "Never"     # Initializes the caregiver-2 variable
 
 """
 Information about the watches go here. It appears in the format below. Make sure all information is exactly the same as those in Android Studios. 
