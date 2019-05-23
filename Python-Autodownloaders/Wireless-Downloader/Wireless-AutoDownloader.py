@@ -264,6 +264,7 @@ while True:     # Creates an always running loop
     print()         # Prints to console
     print("Last Devices Check Occurred on", current_time)       # Prints to console
     print("Last Sync Attempted", downloadtime)       # Prints to console
+    print("Number of Devices Charging:", currentrun)     # Prints to console
     print()     # Prints to console
     print("Patient-1 Successfully Updated", patient_1_time)       # Prints to console
     print("Patient-2 Successfully Updated", patient_2_time)       # Prints to console
