@@ -109,7 +109,7 @@ def connecttodevices():
 
     for key, value in Information.items():      # For every item in the watch list
         if str(value[0]) not in str(adbdevices):        # If the IP address listed is not in the string of adb devices
-            print("Checking connection to", value[0])       # Prints to the console.
+            print("Checking Connection to", key, "with IP-Address", value[0])       # Prints to the console.
             os.system('adb connect ' + str(value[0]))       # They system tries to connect to the missing device.
 
     clear()     # Calls the clear function
@@ -216,13 +216,14 @@ def runautodownloader():
     except:     # If any error happens in the process
         print("Devices Check Failed")       # Prints to the console
 
-    try:        # Tries to do the following
-        print("Running Files Setup")        # Prints to the console
-        dummyfile()     # Calls the file creation function
-        clear()     # Clears the console
-        print("Initial Files Setup Successful")     # Prints to the console
-    except:     # If any error happens in the process
-        sys.exit("Failed Files Setup")      # The system exits the process with a error message on the console
+    if not os.path.exists(patient_subdirectory) or not os.path.exists(caregiver_subdirectory):      # If the paths do not exist
+        try:        # Tries to do the following
+            print("Running Files Setup")        # Prints to the console
+            dummyfile()     # Calls the file creation function
+            clear()     # Clears the console
+            print("Initial Files Setup Successful")     # Prints to the console
+        except:     # If any error happens in the process
+            sys.exit("Failed Files Setup")      # The system exits the process with a error message on the console
 
     try:        # Tries to do the following
         pulldata()      # Calls the pull data function
