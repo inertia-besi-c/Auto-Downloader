@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a6b351f-e12d-4046-866d-8ee8c47abc6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Auto-Downloader.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/HISTORY.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/MANIFEST.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/README.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/command/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/command/host/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/command/serial/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/command/transport/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/device.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/keycode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/client/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/device/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/device/input.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/device/stat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/device/traffic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/device/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/plugins/device/wm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/protocol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/sync/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/sync/stats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/utils/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/pure_python_adb.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/pure_python_adb.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/pure_python_adb.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/pure_python_adb.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/setup.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/.idea/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/DataDownloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/DataDownloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/GetData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/GetData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/Wireless-AutoDownloader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bash Script Downloader/BESI_GetFiles_USB.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Bash-Autodownloders/BESI_GetFiles_USB.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bash Script Downloader/BESI_GetFiles_WiFi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Bash-Autodownloders/BESI_GetFiles_WiFi.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bash Script Downloader/BESI_GetFiles_WiFiMac.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Bash-Autodownloders/BESI_GetFiles_WiFiMac.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bash Script Downloader/BESI_GetFiles_WiFiWindows.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Bash-Autodownloders/BESI_GetFiles_WiFiWindows.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Auto-Downloader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Auto-Downloader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="3136">
+              <caret line="224" column="63" lean-forward="true" selection-start-line="224" selection-start-column="63" selection-end-line="224" selection-end-column="63" />
               <folding>
                 <element signature="e#1115#1201#0" expanded="true" />
               </folding>
@@ -95,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="840" />
     <option name="width" value="840" />
     <option name="height" value="1050" />
@@ -105,6 +61,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,23 +74,10 @@
               <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
               <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
-              <item name="Adb-to-Python-Converter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
-              <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,8 +107,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Wireless-AutoDownloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Wireless-AutoDownloader (1)">
+    <configuration name="Wireless-AutoDownloader (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Auto-Downloader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Wireless-AutoDownloader" type="PythonConfigurationType" factoryName="Python">
       <module name="Auto-Downloader" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,9 +151,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Wireless-AutoDownloader" />
+      <item itemvalue="Python.Wireless-AutoDownloader (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Wireless-AutoDownloader" />
+        <item itemvalue="Python.Wireless-AutoDownloader (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -208,12 +177,12 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15611814" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15611814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="1138" y="99" width="523" height="817" id="Run" order="2" type="FLOATING" weight="0.32987553" />
+      <window_info active="true" anchor="bottom" x="1138" y="99" width="523" height="817" id="Run" order="2" type="FLOATING" visible="true" weight="0.32987553" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -228,7 +197,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Caregiver/Estimote_Data.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_Pedometer_Data.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_EODEMA_DailyActivity" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_EndOfDay_EMA_Results.csv" />
@@ -265,58 +233,15 @@
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device_Accelerometer_Data.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Caregiver/Caregiver-Device_System_Activity.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device_System_Activity.csv" />
-    <entry file="file://$PROJECT_DIR$/Adb-to-Python/adb/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/DataDownloader.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Adb-to-Python/README.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Adb-to-Python/pure_python_adb.egg-info/dependency_links.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Adb-to-Python/pure_python_adb.egg-info/SOURCES.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Adb-to-Python/pure_python_adb.egg-info/PKG-INFO">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/GetData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="81" column="27" lean-forward="true" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Adb-to-Python/adb/client.py" />
+    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/DataDownloader.py" />
+    <entry file="file://$PROJECT_DIR$/Adb-to-Python/README.rst" />
+    <entry file="file://$PROJECT_DIR$/Adb-to-Python/pure_python_adb.egg-info/dependency_links.txt" />
+    <entry file="file://$PROJECT_DIR$/Adb-to-Python/pure_python_adb.egg-info/SOURCES.txt" />
+    <entry file="file://$PROJECT_DIR$/Adb-to-Python/pure_python_adb.egg-info/PKG-INFO" />
+    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wired-Downloader/BESI-C_WatchData_Offload_Terminal/GetData.py" />
+    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/Wireless-AutoDownloader.py" />
+    <entry file="file://$PROJECT_DIR$/hi.py" />
     <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/pure_python_adb.egg-info/dependency_links.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -334,10 +259,13 @@
     <entry file="file://$PROJECT_DIR$/Bash-Autodownloders/BESI_GetFiles_USB.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/PKG-INFO">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="3136">
+          <caret line="224" column="63" lean-forward="true" selection-start-line="224" selection-start-column="63" selection-end-line="224" selection-end-column="63" />
           <folding>
             <element signature="e#1115#1201#0" expanded="true" />
           </folding>
