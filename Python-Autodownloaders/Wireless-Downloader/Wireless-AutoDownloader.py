@@ -203,7 +203,7 @@ def runautodownloader():
     global patient_subdirectory     # Global variable
     global caregiver_subdirectory       # Global variable
 
-    current_time = datetime.datetime.now().strftime("%A, %B %d %Y at %I:%M%p")      # Sets the current time variable
+    current_time = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")      # Sets the current time variable
 
     try:        # Tries to do the following
         connecttodevices()      # Calls the connect function
