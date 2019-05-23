@@ -45,6 +45,10 @@ origin = None       # Initializes the origin variable
 destination = None      # Initializes the destination variable
 downloadtime = None     # Initializes the download time variable
 previousrun = None      # Initializes the previous run variable
+patient_1_time = "Never"       # Initializes the patient-1 variable
+patient_2_time = "Never"       # Initializes the patient-2 variable
+caregiver_1_time = "Never"     # Initializes the caregiver-1 variable
+caregiver_2_time = "Never"     # Initializes the caregiver-2 variable
 
 """
 Information about the watches go here. It appears in the format below. Make sure all information is exactly the same as those in Android Studios. 
@@ -173,29 +177,42 @@ def pulldata():
     global device      # Global variable
     global origin      # Global variable
     global destination      # Global variable
+    global patient_1_time
+    global patient_2_time
+    global caregiver_1_time
+    global caregiver_2_time
 
     for device in devices:      # For every device listed in the devices dictionary
         print()     # Prints to the console
         print("Pulling data from", device.serial, "...")        # Prints to the console
         try:        # Tries the following
             for key, values in File_Information.items():        # For items in the file information dictionary
+                current_time_pull = datetime.datetime.now().strftime("%A, %B %d %Y at %I:%M%p")  # Sets the current time variable
+
                 if str(device.serial) == Information["Patient-1"][0]:       # If the device serial is the same as the ip address of the device for this watch
                     origin = str("/sdcard/BESI-C/" + values[0] + "/" + Information["Patient-1"][1] + "_" + values[1])       # This is where the file is on the host device
                     destination = str(Base_Station_Directory_Path + "/" + "Patient" + "/" + Information["Patient-1"][1] + "_" + values[1])      # This is where the file will be stored
+                    device.pull(origin, destination)  # The files are pulled from the specific device with stated origin and destination
+                    patient_1_time = current_time_pull      # Sets the patient-1 pull time
                 elif str(device.serial) == Information["Patient-2"][0]:       # If the device serial is the same as the ip address of the device for this watch
                     origin = str("/sdcard/BESI-C/" + values[0] + "/" + Information["Patient-2"][1] + "_" + values[1])       # This is where the file is on the host device
                     destination = str(Base_Station_Directory_Path + "/" + "Patient" + "/" + Information["Patient-2"][1] + "_" + values[1])      # This is where the file will be stored
+                    device.pull(origin, destination)  # The files are pulled from the specific device with stated origin and destination
+                    patient_2_time = current_time_pull      # Sets the patient-2 pull time
                 elif str(device.serial) == Information["Caregiver-1"][0]:       # If the device serial is the same as the ip address of the device for this watch
                     origin = str("/sdcard/BESI-C/" + values[0] + "/" + Information["Caregiver-1"][1] + "_" + values[1])       # This is where the file is on the host device
                     destination = str(Base_Station_Directory_Path + "/" + "Caregiver" + "/" + Information["Caregiver-1"][1] + "_" + values[1])      # This is where the file will be stored
+                    device.pull(origin, destination)  # The files are pulled from the specific device with stated origin and destination
+                    caregiver_1_time = current_time_pull      # Sets the caregiver-1 pull time
                 elif str(device.serial) == Information["Caregiver-2"][0]:       # If the device serial is the same as the ip address of the device for this watch
                     origin = str("/sdcard/BESI-C/" + values[0] + "/" + Information["Caregiver-2"][1] + "_" + values[1])       # This is where the file is on the host device
                     destination = str(Base_Station_Directory_Path + "/" + "Caregiver" + "/" + Information["Caregiver-2"][1] + "_" + values[1])      # This is where the file will be stored
+                    device.pull(origin, destination)  # The files are pulled from the specific device with stated origin and destination
+                    caregiver_2_time = current_time_pull      # Sets the caregiver-2 pull time
 
-                device.pull(origin, destination)        # The files are pulled from the specific device with stated origin and destination
                 datetimelog(destination, "a")       # A log file with the data and time is appended to the end of the file.
-
                 print("Data Pull Successful for", values[1])        # Prints to the console
+
         except:     # If any error happens in the process
             print("Device", device.serial, "is offline")        # Prints to the console
 
@@ -245,7 +262,14 @@ while True:     # Creates an always running loop
         runautodownloader()     # Runs the autodownloader function
         previousrun, downloadtime = currentrun, current_time        # Sets the previous run value to the currentrun value, Sets a last download time for the system
 
-    print("Last File Download Occurred on", downloadtime)       # Prints to console
+    print()         # Prints to console
     print("Last Devices Check Occurred on", current_time)       # Prints to console
+    print("Last Sync Attempted", downloadtime)       # Prints to console
+    print()     # Prints to console
+    print("Patient-1 Successfully Updated", patient_1_time)       # Prints to console
+    print("Patient-2 Successfully Updated", patient_2_time)       # Prints to console
+    print("Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
+    print("Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
+    print()       # Prints to console
 
     time.sleep(1)       # The system sleeps for the specified time
