@@ -92,7 +92,7 @@ def clear():
     This clears the output on the python console.
     :return: Returns none.
     """
-    os.system('cls' if os.name == 'nt' else 'clear')        # Clears the output on the python console.
+    os.system('cls' if "nt" == os.name else "clear")        # Clears the output on the python console.
 
 
 def connecttodevices():
