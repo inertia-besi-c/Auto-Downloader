@@ -45,7 +45,7 @@ Watch_Main_Directory = "BESI-C"     # Name of the folder directory where all the
 Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the folder the data will be stored on the device.
 
 Watch_Main_Directory_Path = "/sdcard/"+Watch_Main_Directory     # Absolute path to watch folder directory
-Base_Station_Directory_Path = "/Users/emmanuelogunjirin/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
+Base_Station_Directory_Path = "C:/Users/inertia/Desktop"+Base_Station_Directory        # Absolute path to where you want to save the data
 patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"        # This is the patient subdirectory
 caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"        # This is the caregiver subdirectory
 
@@ -55,9 +55,9 @@ Information about the watches go here. It appears in the format below. Make sure
 """
 Information = \
     {
-        "Patient-1": ["192.168.60.101:5555", "Patient-Device"],        # The first patient watch information\
+        "Patient-1": ["192.168.60.100:5555", "Patient-Device"],        # The first patient watch information\
         "Patient-2": ["192.168.60.104:5555", "Patient-Device-Unused"],      # The second patient watch information
-        "Caregiver-1": ["192.168.60.100:5555", "Caregiver-Device"],     # The first caregiver watch information
+        "Caregiver-1": ["192.168.60.101:5555", "Caregiver-Device"],     # The first caregiver watch information
         "Caregiver-2": ["192.168.60.103:5555", "Caregiver-Device-Unused"],      # The second caregiver watch information
     }
 

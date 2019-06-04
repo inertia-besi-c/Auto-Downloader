@@ -15,7 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/adb/utils" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Python-Autodownloaders/Adb-to-Python-Converter/pure_python_adb.egg-info" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
