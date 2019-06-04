@@ -55,9 +55,9 @@ Information about the watches go here. It appears in the format below. Make sure
 """
 Information = \
     {
-        "Patient-1": ["192.168.60.102:5555", "Patient-Device"],        # The first patient watch information
+        "Patient-1": ["192.168.60.101:5555", "Patient-Device"],        # The first patient watch information\
         "Patient-2": ["192.168.60.104:5555", "Patient-Device-Unused"],      # The second patient watch information
-        "Caregiver-1": ["192.168.60.101:5555", "Caregiver-Device"],     # The first caregiver watch information
+        "Caregiver-1": ["192.168.60.100:5555", "Caregiver-Device"],     # The first caregiver watch information
         "Caregiver-2": ["192.168.60.103:5555", "Caregiver-Device-Unused"],      # The second caregiver watch information
     }
 
