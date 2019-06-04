@@ -55,8 +55,8 @@ Information about the watches go here. It appears in the format below. Make sure
 """
 Information = \
     {
-        "Patient-1": ["192.168.60.100:5555", "Patient-Device"],        # The first patient watch information
-        "Patient-2": ["192.168.60.102:5555", "Patient-Device-Unused"],      # The second patient watch information
+        "Patient-1": ["192.168.60.102:5555", "Patient-Device"],        # The first patient watch information
+        "Patient-2": ["192.168.60.104:5555", "Patient-Device-Unused"],      # The second patient watch information
         "Caregiver-1": ["192.168.60.101:5555", "Caregiver-Device"],     # The first caregiver watch information
         "Caregiver-2": ["192.168.60.103:5555", "Caregiver-Device-Unused"],      # The second caregiver watch information
     }
@@ -253,23 +253,29 @@ def runautodownloader():
 
 
 while True:     # Creates an always running loop
-    current_time = datetime.datetime.now().strftime("%A, %B %d %Y at %I:%M%p")      # Sets the current time variable
-    currentrun = connecttodevices()     # Sets the return of the connect function to the variable
-    runs = [previousrun, currentrun]        # Keeps a running list of the number of devices from the last run, and the current run.
+    try:        # Tries to do the following
+        current_time = datetime.datetime.now().strftime("%A, %B %d %Y at %I:%M%p")      # Sets the current time variable
+        currentrun = connecttodevices()     # Sets the return of the connect function to the variable
+        runs = [previousrun, currentrun]        # Keeps a running list of the number of devices from the last run, and the current run.
 
-    if runs[0] != runs[1]:      # If the previous run and the current run do not have the same connected device count
-        runautodownloader()     # Runs the autodownloader function
-        previousrun, downloadtime = currentrun, current_time        # Sets the previous run value to the currentrun value, Sets a last download time for the system
+        if runs[0] != runs[1]:      # If the previous run and the current run do not have the same connected device count
+            runautodownloader()     # Runs the autodownloader function
+            previousrun, downloadtime = currentrun, current_time        # Sets the previous run value to the currentrun value, Sets a last download time for the system
 
-    print()         # Prints to console
-    print("Last Devices Check Occurred on", current_time)       # Prints to console
-    print("Last Sync Attempted", downloadtime)       # Prints to console
-    print("Number of Devices Charging:", currentrun)     # Prints to console
-    print()     # Prints to console
-    print("Patient-1 Successfully Updated", patient_1_time)       # Prints to console
-    print("Patient-2 Successfully Updated", patient_2_time)       # Prints to console
-    print("Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
-    print("Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
-    print()       # Prints to console
+        print()         # Prints to console
+        print("Last Devices Check Occurred on", current_time)       # Prints to console
+        print("Last Sync Attempted", downloadtime)       # Prints to console
+        print("Number of Devices on Charging Port:", currentrun)     # Prints to console
+        print()     # Prints to console
+        print("- Patient-1 Successfully Updated", patient_1_time)       # Prints to console
+        print("- Patient-2 Successfully Updated", patient_2_time)       # Prints to console
+        print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
+        print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
+        print()       # Prints to console
 
-    time.sleep(1)       # The system sleeps for the specified time
+        time.sleep(1)       # The system sleeps for the specified time
+    except:
+        print("ERROR!, Autodownloader Malfunction!")       # Prints to console
+        print("Automatically Restarting ADB and System")       # Prints to console
+        time.sleep(5)       # Waits 5 seconds
+        os.system('adb kill-server')  # Automatically kills the adb server if it is running.
