@@ -55,10 +55,10 @@ Information about the watches go here. It appears in the format below. Make sure
 """
 Information = \
     {
-        "Patient-1": ["192.168.60.100:5555", "Patient-Device"],        # The first patient watch information\
-        "Patient-2": ["192.168.60.104:5555", "Patient-Device-Unused"],      # The second patient watch information
-        "Caregiver-1": ["192.168.60.101:5555", "Caregiver-Device"],     # The first caregiver watch information
-        "Caregiver-2": ["192.168.60.103:5555", "Caregiver-Device-Unused"],      # The second caregiver watch information
+        "Patient-1": ["191.168.0.159:5555", "Patient-Device"],        # The first patient watch information\
+        "Patient-2": ["191.168.0.104:5555", "Patient-Device-Unused"],      # The second patient watch information
+        "Caregiver-1": ["191.168.0.120:5555", "Caregiver-Device"],     # The first caregiver watch information
+        "Caregiver-2": ["191.168.0.103:5555", "Caregiver-Device-Unused"],      # The second caregiver watch information
     }
 
 """
@@ -209,7 +209,6 @@ def pulldata():
                     device.pull(origin, destination)  # The files are pulled from the specific device with stated origin and destination
                     caregiver_2_time = current_time_pull      # Sets the caregiver-2 pull time
 
-                datetimelog(destination, "a")       # A log file with the data and time is appended to the end of the file.
                 print("Data Pull Successful for", values[1])        # Prints to the console
 
         except:     # If any error happens in the process
