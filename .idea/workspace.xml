@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a6b351f-e12d-4046-866d-8ee8c47abc6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2871">
+            <state relative-caret-position="866">
               <caret line="211" selection-start-line="211" selection-end-line="211" />
               <folding>
                 <element signature="e#1518#1604#0" expanded="true" />
@@ -45,6 +44,8 @@
         <option value="$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/Wireless-AutoDownloader.py" />
         <option value="$PROJECT_DIR$/hi.py" />
         <option value="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py" />
+        <option value="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Test.py" />
+        <option value="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/test.py" />
       </list>
     </option>
   </component>
@@ -64,24 +65,6 @@
             <path>
               <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
-              <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
-              <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Wireless-AutoDownloader.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
@@ -128,7 +111,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Test">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Auto-Downloader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Wireless-AutoDownloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Auto-Downloader" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,6 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.Wireless-AutoDownloader" />
       </list>
     </recent_temporary>
@@ -193,9 +198,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16094032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16094032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -215,7 +219,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_EODEMA_DailyActivity" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_EndOfDay_EMA_Results.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_Battery_Activity.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Caregiver/Caregiver-Device-Unused_Battery_Activity.csv" />
@@ -286,9 +289,10 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/test.py" />
     <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2871">
+        <state relative-caret-position="866">
           <caret line="211" selection-start-line="211" selection-end-line="211" />
           <folding>
             <element signature="e#1518#1604#0" expanded="true" />
