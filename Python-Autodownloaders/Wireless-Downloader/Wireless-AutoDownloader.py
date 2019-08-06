@@ -39,13 +39,13 @@ caregiver_2_time = "Never"     # Initializes the caregiver-2 variable
 
 # ----------------------------------------------------------------------SET-UP----------------------------------------------------------------------- #
 
-Deployment_Identification = "P3D1-Development"      # Name of the deployment
+Deployment_Identification = "P2D2"      # Name of the deployment
 
 Watch_Main_Directory = "BESI-C"     # Name of the folder directory where all the data is stored on the watch
 Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the folder the data will be stored on the device.
 
 Watch_Main_Directory_Path = "/sdcard/"+Watch_Main_Directory     # Absolute path to watch folder directory
-Base_Station_Directory_Path = "/Users/emmanuelogunjirin/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
+Base_Station_Directory_Path = "C:/Users/inertia/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
 patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"        # This is the patient subdirectory
 caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"        # This is the caregiver subdirectory
 
@@ -55,10 +55,10 @@ Information about the watches go here. It appears in the format below. Make sure
 """
 Information = \
     {
-        "Patient-1": ["191.168.0.159:5555", "Patient-Device"],        # The first patient watch information\
-        "Patient-2": ["191.168.0.104:5555", "Patient-Device-Unused"],      # The second patient watch information
-        "Caregiver-1": ["191.168.0.120:5555", "Caregiver-Device"],     # The first caregiver watch information
-        "Caregiver-2": ["191.168.0.103:5555", "Caregiver-Device-Unused"],      # The second caregiver watch information
+        "Patient-1": ["191.168.0.122:5555", "PT1"],        # The first patient watch information
+        "Patient-2": ["191.168.0.121:5555", "PT2"],      # The second patient watch information
+        "Caregiver-1": ["191.168.0.159:5555", "CG1"],     # The first caregiver watch information
+        "Caregiver-2": ["191.168.0.127:5555", "CG2"],      # The second caregiver watch information
     }
 
 """

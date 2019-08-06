@@ -15,11 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
-              <caret line="211" selection-start-line="211" selection-end-line="211" />
-              <folding>
-                <element signature="e#1518#1604#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -49,10 +46,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="4" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="273" />
+    <option name="y" value="132" />
+    <option name="width" value="1359" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -65,6 +63,24 @@
             <path>
               <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
+              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
+              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
+              <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
+              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
+              <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
+              <item name="Wireless-AutoDownloader.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
@@ -88,15 +104,15 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Bash-Autodownloders" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/ADB Automatic Downloaders" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Python-Autodownloaders" />
       <recent name="$PROJECT_DIR$/Bash-Autodownloders" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bash-Autodownloders" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ADB Automatic Downloaders" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -198,13 +214,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16094032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16094032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="1116" y="160" width="535" height="705" id="Run" order="2" type="FLOATING" weight="0.32987553" />
+      <window_info active="true" anchor="bottom" x="14" y="36" width="610" height="233" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32987553" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -219,6 +236,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_EODEMA_DailyActivity" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_EndOfDay_EMA_Results.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Patient/Patient-Device-Unused_Battery_Activity.csv" />
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Caregiver/Caregiver-Device-Unused_Battery_Activity.csv" />
@@ -289,14 +307,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/test.py" />
     <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
+        <state relative-caret-position="2871">
           <caret line="211" selection-start-line="211" selection-end-line="211" />
           <folding>
-            <element signature="e#1518#1604#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
         </state>
       </provider>
     </entry>
