@@ -63,12 +63,12 @@ Information = \
     }
 
 """
-Files to look for
+Files that you would like to display data about on the screen
 """
 Display_File_Dates = \
     [
-        "Pain_EMA_Results.csv",
-        "EndOfDay_EMA_Results.csv",
+        "Pain_EMA_Results.csv",         # The Pain EMAs from the devices
+        "EndOfDay_EMA_Results.csv",         # The End of Day EMAs from the devices
     ]
 
 """
@@ -262,27 +262,31 @@ def runautodownloader():
 
 
 def showlasttimestamps():
-    filepath = ""
-    person = []
-    dates = []
+    """
+    This function returns a list of the last time stamps from the devices listed and the files given.
+    :return: A list of time variables
+    """
+    filepath = ""       # This is the file path to be checked
+    person = []         # These are the devices checked
+    dates = []      # These are the dates returned
 
-    for key, value in Information.items():
-        person.append(Information[key][1])
+    for key, value in Information.items():      # For every device in information
+        person.append(Information[key][1])      # Append it to the person
 
-    for file in Display_File_Dates:
-        for item in person:
-            if "PT" in item:
-                filepath = str(patient_subdirectory+"/"+item+"_"+file)
-            elif "CG" in item:
-                filepath = str(caregiver_subdirectory+"/"+item+"_"+file)
+    for file in Display_File_Dates:     # For the files given
+        for item in person:     # For every device
+            if "PT" in item:    # If PT is in the device
+                filepath = str(patient_subdirectory+"/"+item+"_"+file)      # This is the file path
+            elif "CG" in item:      # If CG is in the device name
+                filepath = str(caregiver_subdirectory+"/"+item+"_"+file)        # This is the file path
 
-            with open(filepath) as newfile:
-                datetimerecent = ""
-                csv_reader = csv.reader(newfile, delimiter=',')
-                for row in csv_reader:
-                    datetimerecent = str(f'{row[0]}')
+            with open(filepath) as newfile:     # Open the file as a newfile
+                datetimerecent = ""     # Resets the date time variable
+                csv_reader = csv.reader(newfile, delimiter=',')     # Strip by the comma
+                for row in csv_reader:      # For rows in the reader
+                    datetimerecent = str(f'{row[0]}')       # Gets the date variable from the column
 
-            dates.append(datetimerecent)
+            dates.append(datetimerecent)        # Append the date to the list
 
     # PT1PainEMA = dates[0]
     # PT2PainEMA = dates[1]
@@ -293,7 +297,7 @@ def showlasttimestamps():
     # CG1EodEMA = dates[6]
     # CG2EodEMA = dates[7]
 
-    return dates
+    return dates        # Return the list of dates
 
 
 while True:     # Creates an always running loop
@@ -318,18 +322,17 @@ while True:     # Creates an always running loop
         print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
         print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
         print()       # Prints to console
-        print("Patient 1 Last Pain EMA:", times[0])
-        print("Patient 2 Last Pain EMA:", times[1])
-        print("Caregiver 1 Last Pain EMA:", times[2])
-        print("Caregiver 2 Last Pain EMA:", times[3])
-        print("Patient 1 Last EoD EMA:", times[4])
-        print("Patient 2 Last EoD EMA:", times[5])
-        print("Caregiver 1 Last EoD EMA:", times[6])
-        print("Caregiver 2 Last EoD EMA:", times[7])
-        print()
-        
+        print("Patient 1 Last Pain EMA:", times[0])       # Prints to console
+        print("Patient 2 Last Pain EMA:", times[1])       # Prints to console
+        print("Caregiver 1 Last Pain EMA:", times[2])       # Prints to console
+        print("Caregiver 2 Last Pain EMA:", times[3])       # Prints to console
+        print("Patient 1 Last EoD EMA:", times[4])       # Prints to console
+        print("Patient 2 Last EoD EMA:", times[5])       # Prints to console
+        print("Caregiver 1 Last EoD EMA:", times[6])       # Prints to console
+        print("Caregiver 2 Last EoD EMA:", times[7])       # Prints to console
+        print()       # Prints to console
 
-        time.sleep(1)       # The system sleeps for the specified time
+        time.sleep(10)       # The system sleeps for the specified time
     except:
         print("ERROR!, Autodownloader Malfunction!")       # Prints to console
         print("Automatically Restarting ADB and System")       # Prints to console
