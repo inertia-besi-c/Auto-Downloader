@@ -261,11 +261,10 @@ def runautodownloader():
     print("Last Download on", current_timer)     # Prints to the console
 
 
-def openfiles():
+def showlasttimestamps():
     filepath = ""
     person = []
     dates = []
-    lastEMAtimes = []
 
     for key, value in Information.items():
         person.append(Information[key][1])
@@ -278,35 +277,23 @@ def openfiles():
                 filepath = str(caregiver_subdirectory+"/"+item+"_"+file)
 
             with open(filepath) as newfile:
-                datetime = ""
+                datetimerecent = ""
                 csv_reader = csv.reader(newfile, delimiter=',')
                 for row in csv_reader:
-                    datetime = str(f'{row[0]}')
+                    datetimerecent = str(f'{row[0]}')
 
-            dates.append(datetime)
+            dates.append(datetimerecent)
 
-    PT1PainEMA = dates[0]
-    PT2PainEMA = dates[1]
-    CG1PainEMA = dates[2]
-    CG2PainEMA = dates[3]
-    PT1EodEMA = dates[4]
-    PT2EodEMA = dates[5]
-    CG1EodEMA = dates[6]
-    CG2EodEMA = dates[7]
+    # PT1PainEMA = dates[0]
+    # PT2PainEMA = dates[1]
+    # CG1PainEMA = dates[2]
+    # CG2PainEMA = dates[3]
+    # PT1EodEMA = dates[4]
+    # PT2EodEMA = dates[5]
+    # CG1EodEMA = dates[6]
+    # CG2EodEMA = dates[7]
 
-    if PT1PainEMA == '' and PT2PainEMA == '':
-        lastEMAtimes[0] = "No Pain EMA Filled Yet"
-    elif PT1PainEMA == '':
-        lastEMAtimes[0] = PT2PainEMA
-    elif PT2PainEMA == '':
-        lastEMAtimes[0] = PT1PainEMA
-    else:
-        if PT1PainEMA > PT2PainEMA:
-            lastEMAtimes[0] = PT1PainEMA
-        elif PT1PainEMA < PT2PainEMA:
-            lastEMAtimes[0] = PT2PainEMA
-
-    print(lastEMAtimes)
+    return dates
 
 
 while True:     # Creates an always running loop
@@ -319,18 +306,28 @@ while True:     # Creates an always running loop
             runautodownloader()     # Runs the autodownloader function
             previousrun, downloadtime = currentrun, current_time        # Sets the previous run value to the currentrun value, Sets a last download time for the system
 
-        openfiles()
+        times = showlasttimestamps()
 
-        # print()         # Prints to console
-        # print("Last Devices Check Occurred on", current_time)       # Prints to console
-        # print("Last Sync Attempted", downloadtime)       # Prints to console
-        # print("Number of Devices on Charging Port:", currentrun)     # Prints to console
-        # print()     # Prints to console
-        # print("- Patient-1 Successfully Updated", patient_1_time)       # Prints to console
-        # print("- Patient-2 Successfully Updated", patient_2_time)       # Prints to console
-        # print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
-        # print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
-        # print()       # Prints to console
+        print()         # Prints to console
+        print("Last Devices Check Occurred on", current_time)       # Prints to console
+        print("Last Sync Attempted", downloadtime)       # Prints to console
+        print("Number of Devices on Charging Port:", currentrun)     # Prints to console
+        print()     # Prints to console
+        print("- Patient-1 Successfully Updated", patient_1_time)       # Prints to console
+        print("- Patient-2 Successfully Updated", patient_2_time)       # Prints to console
+        print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
+        print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
+        print()       # Prints to console
+        print("Patient 1 Last Pain EMA:", times[0])
+        print("Patient 2 Last Pain EMA:", times[1])
+        print("Caregiver 1 Last Pain EMA:", times[2])
+        print("Caregiver 2 Last Pain EMA:", times[3])
+        print("Patient 1 Last EoD EMA:", times[4])
+        print("Patient 2 Last EoD EMA:", times[5])
+        print("Caregiver 1 Last EoD EMA:", times[6])
+        print("Caregiver 2 Last EoD EMA:", times[7])
+        print()
+        
 
         time.sleep(1)       # The system sleeps for the specified time
     except:
