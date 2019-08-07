@@ -2,66 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a6b351f-e12d-4046-866d-8ee8c47abc6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Battery_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_EODEMA_DailyActivity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_EndOfDay_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_EndOfDay_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Estimote_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Followup_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Followup_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Heart_Rate_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Pain_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Pain_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Pedometer_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Sensor_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_Step_Activity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG1_System_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Battery_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_EODEMA_DailyActivity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_EndOfDay_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_EndOfDay_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Estimote_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Followup_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Followup_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Heart_Rate_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Pain_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Pain_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Pedometer_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Sensor_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_Step_Activity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Caregiver/CG2_System_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/DataMonitor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Battery_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_EODEMA_DailyActivity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_EndOfDay_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_EndOfDay_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Estimote_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Followup_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Followup_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Heart_Rate_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Pain_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Pain_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Pedometer_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Sensor_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Step_Activity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_System_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Battery_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_EODEMA_DailyActivity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_EndOfDay_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_EndOfDay_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Estimote_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Followup_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Followup_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Heart_Rate_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Pain_EMA_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Pain_EMA_Results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Pedometer_Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Sensor_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_Step_Activity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT2_System_Activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/csvtools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Auto-Downloader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Auto-Downloader.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,31 +12,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="278" column="24" selection-start-line="278" selection-start-column="24" selection-end-line="278" selection-end-column="24" />
+            <state relative-caret-position="726">
+              <caret line="334" column="21" selection-start-line="334" selection-start-column="21" selection-end-line="334" selection-end-column="21" />
               <folding>
                 <element signature="e#1518#1604#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Pain_EMA_Results.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/PT1_Pain_EMA_Results.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -113,6 +37,7 @@
     <findStrings>
       <find>datetimelog</find>
       <find>Last download run</find>
+      <find>datetime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,21 +85,6 @@
               <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
               <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
               <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
-              <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="P2D2-Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="Python-Autodownloaders" type="462c0819:PsiDirectoryNode" />
-              <item name="Wireless-Downloader" type="462c0819:PsiDirectoryNode" />
-              <item name="P2D2-Data" type="462c0819:PsiDirectoryNode" />
-              <item name="Patient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Auto-Downloader" type="b2602c69:ProjectViewProjectNode" />
@@ -312,17 +222,26 @@
       <option name="presentableId" value="Default" />
       <updated>1558051504855</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added File">
+      <created>1565144373799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565144373799</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16094032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16094032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="945" y="367" width="610" height="411" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32987553" />
+      <window_info anchor="bottom" x="1040" y="104" width="610" height="411" id="Run" order="2" type="WINDOWED" weight="0.32987553" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -335,6 +254,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added File" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added File" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ADB Automatic Downloaders/Wireless-Downloader/P3D1-Development-Data/Caregiver/Caregiver-Device_Step_Activity" />
@@ -413,16 +336,6 @@
     <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Step_Activity">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="278" column="24" selection-start-line="278" selection-start-column="24" selection-end-line="278" selection-end-column="24" />
-          <folding>
-            <element signature="e#1518#1604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/P2D2-Data/Patient/PT1_Pain_EMA_Results.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
@@ -433,6 +346,16 @@
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python-Autodownloaders/Wireless-Downloader/Wireless-AutoDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="334" column="21" selection-start-line="334" selection-start-column="21" selection-end-line="334" selection-end-column="21" />
+          <folding>
+            <element signature="e#1518#1604#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

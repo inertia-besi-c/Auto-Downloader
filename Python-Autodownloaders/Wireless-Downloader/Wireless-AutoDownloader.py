@@ -46,7 +46,7 @@ Watch_Main_Directory = "BESI-C"     # Name of the folder directory where all the
 Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the folder the data will be stored on the device.
 
 Watch_Main_Directory_Path = "/sdcard/"+Watch_Main_Directory     # Absolute path to watch folder directory
-Base_Station_Directory_Path = "Users/emmanuelogunjirin/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
+Base_Station_Directory_Path = "C:/Users/inertia/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
 patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"        # This is the patient subdirectory
 caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"        # This is the caregiver subdirectory
 
@@ -63,12 +63,12 @@ Information = \
     }
 
 """
-Files to look for
+Files that you would like to display data about on the screen
 """
 Display_File_Dates = \
     [
-        "Pain_EMA_Results.csv",
-        "EndOfDay_EMA_Results.csv",
+        "Pain_EMA_Results.csv",         # The Pain EMAs from the devices
+        "EndOfDay_EMA_Results.csv",         # The End of Day EMAs from the devices
     ]
 
 """
@@ -260,27 +260,44 @@ def runautodownloader():
     print()     # Prints the console
     print("Last Download on", current_timer)     # Prints to the console
 
-def openfiles():
-    filepath = ""
-    person = []
-    dates = []
 
-    for key, value in Information.items():
-        person.append(Information[key][1])
+def showlasttimestamps():
+    """
+    This function returns a list of the last time stamps from the devices listed and the files given.
+    :return: A list of time variables
+    """
+    filepath = ""       # This is the file path to be checked
+    person = []         # These are the devices checked
+    dates = []      # These are the dates returned
 
-    for file in Display_File_Dates:
-        for item in person:
-            if "PT" in item:
-                filepath = str(patient_subdirectory+"/"+item+"_"+file)
-            elif "CG" in item:
-                filepath = str(caregiver_subdirectory+"/"+item+"_"+file)
+    for key, value in Information.items():      # For every device in information
+        person.append(Information[key][1])      # Append it to the person
 
-            # print(filepath)
-            filepath = "PT1_Pain_EMA_Results.csv"
+    for file in Display_File_Dates:     # For the files given
+        for item in person:     # For every device
+            if "PT" in item:    # If PT is in the device
+                filepath = str(patient_subdirectory+"/"+item+"_"+file)      # This is the file path
+            elif "CG" in item:      # If CG is in the device name
+                filepath = str(caregiver_subdirectory+"/"+item+"_"+file)        # This is the file path
 
-            with open(filepath) as newfile:
-                print(newfile.readline())
+            with open(filepath) as newfile:     # Open the file as a newfile
+                datetimerecent = ""     # Resets the date time variable
+                csv_reader = csv.reader(newfile, delimiter=',')     # Strip by the comma
+                for row in csv_reader:      # For rows in the reader
+                    datetimerecent = str(f'{row[0]}')       # Gets the date variable from the column
 
+            dates.append(datetimerecent)        # Append the date to the list
+
+    # PT1PainEMA = dates[0]
+    # PT2PainEMA = dates[1]
+    # CG1PainEMA = dates[2]
+    # CG2PainEMA = dates[3]
+    # PT1EodEMA = dates[4]
+    # PT2EodEMA = dates[5]
+    # CG1EodEMA = dates[6]
+    # CG2EodEMA = dates[7]
+
+    return dates        # Return the list of dates
 
 
 while True:     # Creates an always running loop
@@ -293,20 +310,29 @@ while True:     # Creates an always running loop
             runautodownloader()     # Runs the autodownloader function
             previousrun, downloadtime = currentrun, current_time        # Sets the previous run value to the currentrun value, Sets a last download time for the system
 
-        openfiles()
+        times = showlasttimestamps()
 
-        # print()         # Prints to console
-        # print("Last Devices Check Occurred on", current_time)       # Prints to console
-        # print("Last Sync Attempted", downloadtime)       # Prints to console
-        # print("Number of Devices on Charging Port:", currentrun)     # Prints to console
-        # print()     # Prints to console
-        # print("- Patient-1 Successfully Updated", patient_1_time)       # Prints to console
-        # print("- Patient-2 Successfully Updated", patient_2_time)       # Prints to console
-        # print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
-        # print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
-        # print()       # Prints to console
+        print()         # Prints to console
+        print("Last Devices Check Occurred on", current_time)       # Prints to console
+        print("Last Sync Attempted", downloadtime)       # Prints to console
+        print("Number of Devices on Charging Port:", currentrun)     # Prints to console
+        print()     # Prints to console
+        print("- Patient-1 Successfully Updated", patient_1_time)       # Prints to console
+        print("- Patient-2 Successfully Updated", patient_2_time)       # Prints to console
+        print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
+        print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
+        print()       # Prints to console
+        print("Patient 1 Last Pain EMA:", times[0])       # Prints to console
+        print("Patient 2 Last Pain EMA:", times[1])       # Prints to console
+        print("Caregiver 1 Last Pain EMA:", times[2])       # Prints to console
+        print("Caregiver 2 Last Pain EMA:", times[3])       # Prints to console
+        print("Patient 1 Last EoD EMA:", times[4])       # Prints to console
+        print("Patient 2 Last EoD EMA:", times[5])       # Prints to console
+        print("Caregiver 1 Last EoD EMA:", times[6])       # Prints to console
+        print("Caregiver 2 Last EoD EMA:", times[7])       # Prints to console
+        print()       # Prints to console
 
-        time.sleep(1)       # The system sleeps for the specified time
+        time.sleep(10)       # The system sleeps for the specified time
     except:
         print("ERROR!, Autodownloader Malfunction!")       # Prints to console
         print("Automatically Restarting ADB and System")       # Prints to console
