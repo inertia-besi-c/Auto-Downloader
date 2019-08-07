@@ -46,7 +46,7 @@ Watch_Main_Directory = "BESI-C"     # Name of the folder directory where all the
 Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the folder the data will be stored on the device.
 
 Watch_Main_Directory_Path = "/sdcard/"+Watch_Main_Directory     # Absolute path to watch folder directory
-Base_Station_Directory_Path = "Users/emmanuelogunjirin/Documents/"+Base_Station_Directory        # Absolute path to where you want to save the data
+Base_Station_Directory_Path = "C:/Users/inertia/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
 patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"        # This is the patient subdirectory
 caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"        # This is the caregiver subdirectory
 
@@ -260,10 +260,12 @@ def runautodownloader():
     print()     # Prints the console
     print("Last Download on", current_timer)     # Prints to the console
 
+
 def openfiles():
     filepath = ""
     person = []
     dates = []
+    lastEMAtimes = []
 
     for key, value in Information.items():
         person.append(Information[key][1])
@@ -275,8 +277,6 @@ def openfiles():
             elif "CG" in item:
                 filepath = str(caregiver_subdirectory+"/"+item+"_"+file)
 
-            print(filepath)
-
             with open(filepath) as newfile:
                 datetime = ""
                 csv_reader = csv.reader(newfile, delimiter=',')
@@ -285,7 +285,28 @@ def openfiles():
 
             dates.append(datetime)
 
-    print(dates)
+    PT1PainEMA = dates[0]
+    PT2PainEMA = dates[1]
+    CG1PainEMA = dates[2]
+    CG2PainEMA = dates[3]
+    PT1EodEMA = dates[4]
+    PT2EodEMA = dates[5]
+    CG1EodEMA = dates[6]
+    CG2EodEMA = dates[7]
+
+    if PT1PainEMA == '' and PT2PainEMA == '':
+        lastEMAtimes[0] = "No Pain EMA Filled Yet"
+    elif PT1PainEMA == '':
+        lastEMAtimes[0] = PT2PainEMA
+    elif PT2PainEMA == '':
+        lastEMAtimes[0] = PT1PainEMA
+    else:
+        if PT1PainEMA > PT2PainEMA:
+            lastEMAtimes[0] = PT1PainEMA
+        elif PT1PainEMA < PT2PainEMA:
+            lastEMAtimes[0] = PT2PainEMA
+
+    print(lastEMAtimes)
 
 
 while True:     # Creates an always running loop
