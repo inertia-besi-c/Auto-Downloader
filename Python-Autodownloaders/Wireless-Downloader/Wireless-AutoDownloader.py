@@ -46,7 +46,7 @@ Watch_Main_Directory = "BESI-C"     # Name of the folder directory where all the
 Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the folder the data will be stored on the device.
 
 Watch_Main_Directory_Path = "/sdcard/"+Watch_Main_Directory     # Absolute path to watch folder directory
-Base_Station_Directory_Path = "Users/emmanuelogunjirin/Desktop/"+Base_Station_Directory        # Absolute path to where you want to save the data
+Base_Station_Directory_Path = "Users/emmanuelogunjirin/Documents/"+Base_Station_Directory        # Absolute path to where you want to save the data
 patient_subdirectory = Base_Station_Directory_Path + "/" + "Patient"        # This is the patient subdirectory
 caregiver_subdirectory = Base_Station_Directory_Path + "/" + "Caregiver"        # This is the caregiver subdirectory
 
@@ -275,12 +275,17 @@ def openfiles():
             elif "CG" in item:
                 filepath = str(caregiver_subdirectory+"/"+item+"_"+file)
 
-            # print(filepath)
-            filepath = "PT1_Pain_EMA_Results.csv"
+            print(filepath)
 
             with open(filepath) as newfile:
-                print(newfile.readline())
+                datetime = ""
+                csv_reader = csv.reader(newfile, delimiter=',')
+                for row in csv_reader:
+                    datetime = str(f'{row[0]}')
 
+            dates.append(datetime)
+
+    print(dates)
 
 
 while True:     # Creates an always running loop
