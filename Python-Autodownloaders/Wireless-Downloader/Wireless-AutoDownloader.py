@@ -40,7 +40,7 @@ caregiver_2_time = "Never"     # Initializes the caregiver-2 variable
 
 # ----------------------------------------------------------------------SET-UP----------------------------------------------------------------------- #
 
-Deployment_Identification = "P2D2"      # Name of the deployment
+Deployment_Identification = "P2D3"      # Name of the deployment
 
 Watch_Main_Directory = "BESI-C"     # Name of the folder directory where all the data is stored on the watch
 Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the folder the data will be stored on the device.
@@ -56,10 +56,10 @@ Information about the watches go here. It appears in the format below. Make sure
 """
 Information = \
     {
-        "Patient-1": ["191.168.0.122:5555", "PT1"],        # The first patient watch information
-        "Patient-2": ["191.168.0.121:5555", "PT2"],      # The second patient watch information
-        "Caregiver-1": ["191.168.0.159:5555", "CG1"],     # The first caregiver watch information
-        "Caregiver-2": ["191.168.0.127:5555", "CG2"],      # The second caregiver watch information
+        "Patient-1": ["191.168.0.140:5555", "PT1"],        # The first patient watch information
+        "Patient-2": ["191.168.0.141:5555", "PT2"],      # The second patient watch information
+        "Caregiver-1": ["191.168.0.142:5555", "CG1"],     # The first caregiver watch information
+        "Caregiver-2": ["191.168.0.143:5555", "CG2"],      # The second caregiver watch information
     }
 
 """
@@ -138,7 +138,7 @@ def datetimelog(endfile, mode):
     """
     with open(endfile, str(mode)) as file:      # Opens the specified file
         current_time_download = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")        # Gets the current data and time from the system
-        file.write("Last download run happened on " + str(current_time_download))        # Writes the line to the given device destination
+        file.write("")        # Writes the line to the given device destination
         file.write("\n")        # Prints a new line
 
 
@@ -322,10 +322,10 @@ while True:     # Creates an always running loop
         print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
         print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
         print()       # Prints to console
-        print("Patient 1 Last Pain EMA:", times[0])       # Prints to console
-        print("Patient 2 Last Pain EMA:", times[1])       # Prints to console
-        print("Caregiver 1 Last Pain EMA:", times[2])       # Prints to console
-        print("Caregiver 2 Last Pain EMA:", times[3])       # Prints to console
+        print("Patient 1 Last Pain EMA Initiation:", times[0])       # Prints to console
+        print("Patient 2 Last Pain EMA Initiation:", times[1])       # Prints to console
+        print("Caregiver 1 Last Pain EMA Initiation:", times[2])       # Prints to console
+        print("Caregiver 2 Last Pain EMA Inititation:", times[3])       # Prints to console
         print("Patient 1 Last EoD EMA:", times[4])       # Prints to console
         print("Patient 2 Last EoD EMA:", times[5])       # Prints to console
         print("Caregiver 1 Last EoD EMA:", times[6])       # Prints to console
