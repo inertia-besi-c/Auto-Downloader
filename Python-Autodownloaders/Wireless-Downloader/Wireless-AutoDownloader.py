@@ -138,7 +138,7 @@ def datetimelog(endfile, mode):
     """
     with open(endfile, str(mode)) as file:      # Opens the specified file
         current_time_download = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")        # Gets the current data and time from the system
-        file.write("Last download run happened on " + str(current_time_download))        # Writes the line to the given device destination
+        file.write("No files in Watch as of " + current_time_download)        # Writes the line to the given device destination
         file.write("\n")        # Prints a new line
 
 
@@ -322,10 +322,10 @@ while True:     # Creates an always running loop
         print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
         print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
         print()       # Prints to console
-        print("Patient 1 Last Pain EMA:", times[0])       # Prints to console
-        print("Patient 2 Last Pain EMA:", times[1])       # Prints to console
-        print("Caregiver 1 Last Pain EMA:", times[2])       # Prints to console
-        print("Caregiver 2 Last Pain EMA:", times[3])       # Prints to console
+        print("Patient 1 Last Pain EMA Initiation:", times[0])       # Prints to console
+        print("Patient 2 Last Pain EMA Initiation:", times[1])       # Prints to console
+        print("Caregiver 1 Last Pain EMA Initiation:", times[2])       # Prints to console
+        print("Caregiver 2 Last Pain EMA Inititation:", times[3])       # Prints to console
         print("Patient 1 Last EoD EMA:", times[4])       # Prints to console
         print("Patient 2 Last EoD EMA:", times[5])       # Prints to console
         print("Caregiver 1 Last EoD EMA:", times[6])       # Prints to console
