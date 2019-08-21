@@ -138,7 +138,7 @@ def datetimelog(endfile, mode):
     """
     with open(endfile, str(mode)) as file:      # Opens the specified file
         current_time_download = datetime.datetime.now().strftime("%A %B %d %Y at %I:%M%p")        # Gets the current data and time from the system
-        file.write("")        # Writes the line to the given device destination
+        file.write("No files in Watch as of " + current_time_download)        # Writes the line to the given device destination
         file.write("\n")        # Prints a new line
 
 
