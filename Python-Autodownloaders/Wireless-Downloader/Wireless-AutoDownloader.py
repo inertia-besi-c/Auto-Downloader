@@ -40,7 +40,7 @@ caregiver_2_time = "Never"     # Initializes the caregiver-2 variable
 
 # ----------------------------------------------------------------------SET-UP----------------------------------------------------------------------- #
 
-Deployment_Identification = "P2D2"      # Name of the deployment
+Deployment_Identification = "P2D4"      # Name of the deployment
 
 Watch_Main_Directory = "BESI-C"     # Name of the folder directory where all the data is stored on the watch
 Base_Station_Directory = Deployment_Identification+"-Data"      # Name of the folder the data will be stored on the device.
@@ -56,10 +56,10 @@ Information about the watches go here. It appears in the format below. Make sure
 """
 Information = \
     {
-        "Patient-1": ["191.168.0.122:5555", "PT1"],        # The first patient watch information
-        "Patient-2": ["191.168.0.121:5555", "PT2"],      # The second patient watch information
-        "Caregiver-1": ["191.168.0.159:5555", "CG1"],     # The first caregiver watch information
-        "Caregiver-2": ["191.168.0.127:5555", "CG2"],      # The second caregiver watch information
+        "Patient-1": ["191.168.0.127:5555", "PT1"],        # The first patient watch information
+        "Patient-2": ["191.168.0.159:5555", "PT2"],      # The second patient watch information
+        "Caregiver-1": ["191.168.0.139:5555", "CG1"],     # The first caregiver watch information
+        "Caregiver-2": ["191.168.0.148:5555", "CG2"],      # The second caregiver watch information
     }
 
 """
@@ -319,6 +319,10 @@ while True:     # Creates an always running loop
         print("Number of Devices on Charging Port:", currentrun)     # Prints to console
         print()     # Prints to console
         print("- Patient-1 Successfully Updated", patient_1_time)       # Prints to console
+        print("Patient 2 Last EoD EMA:", times[5])       # Prints to console
+        print("Caregiver 1 Last EoD EMA:", times[6])       # Prints to console
+        print("Caregiver 2 Last EoD EMA:", times[7])       # Prints to console
+        print()       # Prints to console
         print("- Patient-2 Successfully Updated", patient_2_time)       # Prints to console
         print("- Caregiver-1 Successfully Updated", caregiver_1_time)       # Prints to console
         print("- Caregiver-2 Successfully Updated", caregiver_2_time)       # Prints to console
@@ -328,10 +332,6 @@ while True:     # Creates an always running loop
         print("Caregiver 1 Last Pain EMA:", times[2])       # Prints to console
         print("Caregiver 2 Last Pain EMA:", times[3])       # Prints to console
         print("Patient 1 Last EoD EMA:", times[4])       # Prints to console
-        print("Patient 2 Last EoD EMA:", times[5])       # Prints to console
-        print("Caregiver 1 Last EoD EMA:", times[6])       # Prints to console
-        print("Caregiver 2 Last EoD EMA:", times[7])       # Prints to console
-        print()       # Prints to console
         print("-----------------------------------------------------------------------------------")      # Prints to console
 
 
