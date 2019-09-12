@@ -313,6 +313,7 @@ while True:     # Creates an always running loop
         times = showlasttimestamps()
 
         print()         # Prints to console
+        print("-----------------------------------------------------------------------------------")      # Prints to console
         print("Last Devices Check Occurred on", current_time)       # Prints to console
         print("Last Sync Attempted", downloadtime)       # Prints to console
         print("Number of Devices on Charging Port:", currentrun)     # Prints to console
@@ -331,8 +332,10 @@ while True:     # Creates an always running loop
         print("Caregiver 1 Last EoD EMA:", times[6])       # Prints to console
         print("Caregiver 2 Last EoD EMA:", times[7])       # Prints to console
         print()       # Prints to console
+        print("-----------------------------------------------------------------------------------")      # Prints to console
 
-        time.sleep(10)       # The system sleeps for the specified time
+
+        time.sleep(1)       # The system sleeps for the specified time
     except:
         print("ERROR!, Autodownloader Malfunction!")       # Prints to console
         print("Automatically Restarting ADB and System")       # Prints to console
